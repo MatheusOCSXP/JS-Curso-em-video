@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PASSAPORTE</title>
+</head>
+<body>
+    <h1>Passaporte - País de Origem</h1>
+    Informe o seu país de origem: <input type="text" name="txtpais" id="txtpais">
+    <input type="button" value="Verificar" onclick="passaporte()">
+   
+    <div id='res'>
+
+    </div>
+
+    <script>
+        function passaporte () {
+        var pais = window.document.querySelector('input#txtpais')
+        var res = window.document.querySelector('div#res')
+        console.log(pais.value)
+        res.innerHTML = `O seu país de origem é <strong>${pais.value}</strong>`
+    }
+    </script>
+</body>
+</html>
